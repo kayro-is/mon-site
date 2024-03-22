@@ -1,0 +1,470 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%; 
+    font-family: 'Roboto', sans-serif;
+       background: linear-gradient(to top, #ffffff 0%, #001b48 100%);
+
+}
+
+body {
+    display: flex;
+    background-image: url(../images/baleine-bosse-sautant-au-dessus-mer-ai-generative.jpg);
+    background-repeat: no-repeat; /* Empêche l'image de se répéter */
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif; /* Appliquer la police Oswald au corps */
+    background-size: cover;    
+    
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 5px 20px;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+    flex-wrap: nowrap; 
+}
+
+  ul {
+    list-style: none; /* Enlève les puces */
+    display: flex; /* Affiche les éléments de la liste horizontalement */
+    padding: 0; /* Enlève le padding par défaut */
+    margin: 0; /* Enlève la marge par défaut */
+    font-size: 1.3rem;
+    color: #fff;
+    
+}
+
+  a {
+    margin-right: 5rem; /* Espacement entre les liens */
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    transition: all 0.3s ease-out;
+       
+   
+   
+}
+
+a:hover {
+    background-color: #02457a;
+    border-radius: 30px ;
+    color: #fff;
+    text-decoration:underline;
+}
+
+
+.input-title{
+    display: flex;
+    align-items: center;
+   }
+
+   #site-search {
+    background-color: transparent; /* Fond transparent */
+    color: #fff;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     margin-right: 10px; /* Ajuste la position par rapport au bouton */
+     width: 200px; /* Ajuste la largeur selon tes besoins */
+
+   }
+
+   #search-btn {
+       background-color: transparent; /* Fond transparent */
+       border: 1px #fff; /* Couleur de la bordure */
+       border-radius: 30px 30px 30px 30px;
+       cursor: pointer;
+       color: #fff; /* Couleur du texte */
+       transition: all 0.3s ease-out;      
+       padding: 20px;
+       display: flex;
+       align-items: center;
+       margin-left: 10px;
+       font-weight: bold;
+
+   }
+   #search-btn:hover {
+       background-color: #02457a;
+       color: #fff;
+       text-decoration:underline;
+   }
+
+li:last-child {
+    margin-right: 0; /* Pas d'espacement après le dernier élément */
+}
+
+.title-logo h1 {
+    color: #ffffff; /* Couleur du texte en blanc */
+    font: 700 2em 'Roboto', sans-serif;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+
+.title-logo p {
+    display: flex;
+    font-size: 0.8em; /* Taille de la police plus petite */
+    color: #ffffff; /* Couleur du texte en blanc */
+    margin-top: 8px; /* Marge en haut pour l'espace */
+}
+
+.title-logo::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background-color: #02457a; /* Couleur de la ligne en blanc */
+    margin: 8px auto 0;
+}
+
+#intro {
+    text-align: center;
+    font-family: 'Roboto', sans-serif; /* Police de caractères */
+    font-weight: bold; /* Gras */    
+}
+
+#intro h2 {
+font-size: 4rem;
+color: #fff;
+margin: 5rem;
+}
+
+#intro span {
+    color: #02457a;
+    font-style: italic;
+    text-decoration:underline;
+}
+
+.introduction {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
+   
+}
+
+
+
+
+.introduction {
+    backdrop-filter: blur(10px);
+    border-radius: 5px; /* Ou 30px, selon la valeur que vous préférez */
+    border: 2px solid #fff; /* Assurez-vous d'inclure une couleur de bordure */
+    color: #fff;
+    margin-top:42rem; /* Ajusté pour être plus réaliste, mais modifiez selon vos besoins */
+    padding: 20px;
+    width: 100%;
+   
+}
+
+.introduction h2 {
+    text-align: center;
+    padding: 20px;
+    text-decoration:underline;
+}
+
+.introduction p {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+.introduction i {
+    color: #018abe;
+    font-weight: bold;
+    text-decoration:underline;
+}
+
+#carousel {
+    width: 800px;
+    height: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    position: relative;
+
+}
+
+#container {
+    width: 800px;
+    height: 400px;
+}
+
+.photo {
+    width: 800px;
+    height: 400px;
+    margin: 0;
+    display: inline-block;
+    background-size: cover;
+    
+}
+
+.button {
+    position: absolute;
+    width: 70px; 
+    cursor: pointer;
+    top: 160px;
+}
+
+#g {
+    left: 0;
+    opacity: 0.4;
+    transform: rotate(0deg);
+    transition: all 0.3s ease;
+}
+
+#d {
+    right: 0;
+    opacity: 0.4;
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+#g:hover {
+    transform: rotate(0deg) scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+} 
+#d:hover {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+    transition: all 0.3s ease;
+} 
+
+.carousel  {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+    padding: 40px;
+    color: #ffffff;
+    text-decoration:underline;
+
+    
+}
+
+.carousel  span {
+    color: #02457a;
+    font-style: italic;
+   
+}
+
+.gallery {
+    display: flex;
+    overflow-x: scroll;
+    gap: 20px; /* Espacement entre les images */
+    padding: 10px;
+}
+
+.gallery span {
+    flex: none; /* Garde les spans dans le flux flex sans les étirer */
+}
+
+.gallery span img {
+    margin: 15px;
+    width: 800px; /* ou 'auto' pour conserver les proportions originales */
+    height: 400px; /* ou 'auto' pour conserver les proportions originales */
+    transition: transform 0.5s;
+}
+
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#backBtn {
+    cursor: pointer;
+    left: 0;
+    opacity: 0.4;
+    transform: rotate(0deg);
+    transform:all 0.5s ease;
+}
+ #nextBtn {
+    cursor: pointer;
+    right: 0;
+    opacity: 0.4;
+    transform: rotate(180deg);
+    transform:all 0.5s ease;
+}
+
+#backBtn:hover {
+    transform: rotate(0deg) scale(1.1);
+    opacity: 1;
+    transform:all 0.5s ease;
+}
+#nextBtn:hover {
+    transform: rotate(180deg) scale(1.1);
+    opacity: 1;
+    transform:all 0.5s ease;
+}
+
+
+
+.gallery span img:hover{
+    filter:grayscale(0) ;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#carte-inter h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    margin-top: 3rem;
+    padding: 40px;
+    color: #ffffff;
+    text-decoration:underline;
+}
+
+#carte-inter img {
+    max-width: 100%;
+    
+}
+
+footer {
+    background: linear-gradient(to bottom, #ffffff 0%, #001b48 100%);
+    color: white;
+    padding:5rem;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-content h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    padding-bottom: 40px;
+    color: #ffffff;
+    
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    padding: 20px;
+    transition: all 0.3s ease-out;;
+}
+
+.footer-links a:hover {
+    background-color: #02457a;
+    border-radius: 30px ;
+    color: #fff;
+    text-decoration:underline;
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.separator {
+    width: 80%; /* Ajustez la largeur selon votre préférence */
+    height: 1px;
+    background-color: #fff; /* Couleur de la ligne */
+    margin: 20px 0; /* Ajustez l'espacement autour de la ligne */
+}
+
+/* Pour les tablettes */
+@media (max-width: 768px) {
+    .header-section, .footer-content {
+        flex-direction: column;
+    }
+
+    .title-logo h1, .footer-links a, #intro h2 {
+        font-size: 2rem;
+    }
+
+    .gallery span img, #carousel, #container {
+        width: 100%;
+        height: auto;
+    }
+
+    .input-title, .button {
+        padding: 10px;
+        margin: 0 auto; /* Centre les éléments */
+    }
+
+    .social-icon {
+        font-size: 20px; /* Réduit la taille des icônes des réseaux sociaux */
+    }
+
+    .footer-links li {
+        display: block; /* Affiche les liens du footer verticalement */
+        margin: 10px 0; /* Ajoute un espace entre les liens */
+    }
+}
+
+/* Pour les smartphones */
+@media (max-width: 480px) {
+    .header-section, .footer-content {
+        padding: 10px;
+    }
+
+    .title-logo h1, .footer-links a, #intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .social-icon {
+        margin: 0 5px; /* Réduit l'espace entre les icônes */
+    }
+
+    .input-title, .button {
+        padding: 5px;
+    }
+
+    #site-search, #search-btn {
+        width: 100%; /* Permet aux champs de recherche de prendre toute la largeur */
+        margin: 5px 0; /* Ajuste l'espacement */
+    }
+
+    .gallery, .gallery-wrap {
+        flex-direction: column;
+    }
+
+    .gallery span img {
+        margin: 10px 0; /* Augmente l'espace entre les images */
+    }
+}
